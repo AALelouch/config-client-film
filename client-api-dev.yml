@@ -1,4 +1,19 @@
+server:
+  port: 8082
+
+base:
+  path: /client-api/client
+
 spring:
+  application:
+    name: client-api
+
+spring:
+  kafka:
+    bootstrap-servers: broker:29092
+    topic-return: returned-film
+    topic-assign: rent-film
+
   jpa:
     database: POSTGRESQL
 
@@ -17,3 +32,12 @@ spring:
     url: jdbc:postgresql://postgres-docker/postgres
     username: postgres
     password: password
+
+eureka:
+  client:
+    instance.preferIpAddress: true
+    registerWithEureka: true
+    fetchRegistry: true
+
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka
