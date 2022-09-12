@@ -1,0 +1,19 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+
+    show-sql: true
+
+    hibernate:
+      ddl-auto: update
+    
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
+  
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://postgres-docker/postgres
+    username: postgres
+    password: password
