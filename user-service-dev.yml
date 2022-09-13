@@ -1,0 +1,30 @@
+debug:
+    enable: true
+eureka:
+    client:
+        fetchRegistry: true
+        instance:
+            preferIpAddress: true
+        registerWithEureka: true
+        serviceUrl:
+            defaultZone: http://eureka-server:8761/eureka
+server:
+    port: 8083
+spring:
+    application:
+        name: user-service
+    client:
+        url: http://client-api:8082/client-api/client/
+    datasource:
+        password: password
+        url: jdbc:postgresql://postgres-docker/users_service
+        username: postgres
+    jpa:
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQL81Dialect
+                format_sql: true
+        show-sql: true
