@@ -28,11 +28,3 @@ spring:
                 dialect: org.hibernate.dialect.PostgreSQL81Dialect
                 format_sql: true
         show-sql: true
-
-    security:
-        oauth2:
-            resourceserver:
-                opaquetoken:
-                    introspection-uri: http://localhost:8081/auth/realms/JJRealm/protocol/openid-connect/token/introspect
-                    client-id: spring-gateway-client
-                    client-secret: secret

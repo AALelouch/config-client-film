@@ -31,28 +31,26 @@ spring:
       name: gateway
   cloud:
       gateway:
+        default-filters:
+          - TokenRelay=
         discovery:
           locator:
             enabled: true
             lower-case-service-id: true
 
   security:
-    oauth2:
       client:
         provider:
           keycloak:
             issuer-uri: http://localhost:8081/auth/realms/JJRealm
         registration:
-          keycloak-with-test-scope:
+          quotes-client:
             provider: keycloak
-            client-id: spring-with-test-scope
-            client-secret: c6480137-1526-4c3e-aed3-295aabcb7609
-            authorization-grant-type: authorization_code
-            redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
+            client-id: spring-gateway-client
+            client-secret: secret
 
   main:
     web-application-type: reactive
-    allow-bean-definition-overriding: true
     
   user:
     username:
