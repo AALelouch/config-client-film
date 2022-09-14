@@ -33,12 +33,12 @@ spring:
     group-return: group-return
     group-rent: group-rent
 
+  client:
+    url: http://client-api:8082/client-api/client/
+
 eureka:
   client:
     instance.preferIpAddress: true
     registerWithEureka: true
     fetchRegistry: true
-
-  client:
-    url: http://client-api:8082/client-api/client/
       
