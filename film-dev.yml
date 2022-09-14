@@ -23,8 +23,6 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQL81Dialect
-    
-    generate-ddl: true
   
   kafka:
     bootstrap-servers: broker:29092
