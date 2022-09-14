@@ -31,6 +31,8 @@ spring:
       name: gateway
   cloud:
       gateway:
+        default-filters:
+          - TokenRelay
         discovery:
           locator:
             enabled: true
