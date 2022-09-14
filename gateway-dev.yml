@@ -21,7 +21,7 @@ management:
       enabled: true
     web:
       exposure:
-        include: *
+        include: "*"
 
 server:
   port: 9093
