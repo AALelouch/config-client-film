@@ -28,3 +28,9 @@ spring:
                 dialect: org.hibernate.dialect.PostgreSQL81Dialect
                 format_sql: true
         show-sql: true
+
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    issuer-uri: http://keycloak:8080/auth/realms/master
