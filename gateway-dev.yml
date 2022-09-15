@@ -56,3 +56,11 @@ spring:
   user:
     username:
       url: http://user-service:8083/api/user/username/
+
+springbootwebfluxjjwt: 
+  jjwt: 
+    secret: ThisIsSecretForJWTHS512SignatureAlgorithmThatMUSTHave64ByteLength
+
+springbootwebfluxjjwt:
+  jjwt:
+    expiration: 28800
