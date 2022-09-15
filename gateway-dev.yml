@@ -55,7 +55,7 @@ spring:
     
   user:
     username:
-      url: http://user-service:8083/api/user/username/
+      url: http://localhost:8083/api/user/username/
 
 springbootwebfluxjjwt: 
   jjwt: 
