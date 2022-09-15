@@ -38,7 +38,6 @@ spring:
 
   main:
     web-application-type: reactive
-    allow-bean-definition-overriding: true
     
   user:
     username:
