@@ -31,23 +31,10 @@ spring:
       name: gateway
   cloud:
       gateway:
-        default-filters:
-          - TokenRelay=
         discovery:
           locator:
             enabled: true
             lower-case-service-id: true
-
-  security:
-      client:
-        provider:
-          keycloak:
-            issuer-uri: http://localhost:8081/auth/realms/JJRealm
-        registration:
-          quotes-client:
-            provider: keycloak
-            client-id: spring-gateway-client
-            client-secret: secret
 
   main:
     web-application-type: reactive
