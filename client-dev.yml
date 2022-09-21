@@ -9,7 +9,7 @@ spring:
     name: client-api
 
   kafka:
-    bootstrap-servers: broker:29092
+    bootstrap-servers: broker:9092
     topic-return: returned-film
     topic-assign: rent-film
 
