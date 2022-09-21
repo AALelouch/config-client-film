@@ -27,7 +27,7 @@ spring:
     generate-ddl: true
   
   kafka:
-    bootstrap-servers: broker:29092
+    bootstrap-servers: broker:9092
     topic-return: returned-film
     topic-rent: rent-film
     group-return: group-return
