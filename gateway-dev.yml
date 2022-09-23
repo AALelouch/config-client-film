@@ -35,6 +35,15 @@ spring:
           locator:
             enabled: true
             lower-case-service-id: true
+
+        routes:
+        - id: film
+          uri: film-api:8081
+        - id: client
+          uri: client-api:8082
+        - id: user
+          uri: user-service:8083
+
   main:
     web-application-type: reactive
     
