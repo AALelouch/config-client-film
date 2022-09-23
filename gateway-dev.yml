@@ -36,6 +36,22 @@ spring:
             enabled: true
             lower-case-service-id: true
 
+        routes:
+        - id: film
+          uri: film-api
+          predicates:
+          - Path=/film-api/**
+
+        - id: client
+          uri: client-api
+          predicates:
+          - Path=/client-api-route/**
+
+        - id: user
+          uri: user-service
+          predicates:
+          - Path=/user-service-route/**
+
   main:
     web-application-type: reactive
     
