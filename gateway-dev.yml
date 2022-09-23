@@ -38,9 +38,9 @@ spring:
 
         routes:
         - id: film
-          uri: film-api:8081
+          uri: film-api:8081/api/film
           predicates:
-          - Path=/film-api/
+          - Path=/film-api/api/film
 
         - id: client
           uri: client-api:8082
