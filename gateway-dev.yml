@@ -38,11 +38,19 @@ spring:
 
         routes:
         - id: film
-          uri: film-api:8081
+          uri: http://film-api:8081
+          predicates:
+          - Path=/film-api/**
+
         - id: client
-          uri: client-api:8082
+          uri: http://client-api:8082
+          predicates:
+          - Path=/client-api-route/**
+
         - id: user
-          uri: user-service:8083
+          uri: http://user-service:8083
+          predicates:
+          - Path=/user-service-route/**
 
   main:
     web-application-type: reactive
