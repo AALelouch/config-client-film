@@ -30,6 +30,9 @@ spring:
     topic-rent: rent-film
     group-return: group-return
     group-rent: group-rent
+    
+  client:
+    url: http://client-api:8082/client-api/client/
 
 eureka:
   client:
@@ -37,6 +40,6 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
 
-  client:
-    url: http://client-api:8082/client-api/client/
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka
       

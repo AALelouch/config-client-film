@@ -21,7 +21,7 @@ management:
       enabled: true
     web:
       exposure:
-        include: *
+        include: "*"
 
 server:
   port: 9093
@@ -58,3 +58,8 @@ spring:
   user:
     username:
       url: http://user-service:8083/api/user/username/
+
+springbootwebfluxjjwt: 
+  jjwt: 
+    secret: ThisIsSecretForJWTHS512SignatureAlgorithmThatMUSTHave64ByteLength
+    expiration: 28800
