@@ -13,8 +13,6 @@ server:
 spring:
     application:
         name: user-service
-    client:
-        url: http://client-api:8082/client-api/client/
     datasource:
         password: password
         url: jdbc:postgresql://moviesproject.c7tfhj560bbp.us-east-1.rds.amazonaws.com/users_service
