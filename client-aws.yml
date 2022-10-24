@@ -1,0 +1,42 @@
+server:
+  port: 8082
+
+base:
+  path: /client-api/client
+
+spring:
+  application:
+    name: client-api
+
+  kafka:
+    bootstrap-servers: broker:9092
+    topic-return: returned-film
+    topic-assign: rent-film
+
+  jpa:
+    database: POSTGRESQL
+
+    show-sql: true
+
+    hibernate:
+      ddl-auto: update
+    
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQL81Dialect
+  
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://moviesproject.c7tfhj560bbp.us-east-1.rds.amazonaws.com/postgres
+    username: postgres
+    password: password
+
+eureka:
+  client:
+    instance.preferIpAddress: true
+    registerWithEureka: true
+    fetchRegistry: true
+
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka
