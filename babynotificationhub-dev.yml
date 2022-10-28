@@ -1,0 +1,18 @@
+server:
+  port: 8084
+
+debug:
+  enable: true
+
+spring:
+  application:
+    name: babynotificationhub
+
+eureka:
+  client:
+    instance.preferIpAddress: true
+    registerWithEureka: true
+    fetchRegistry: true
+
+    serviceUrl:
+      defaultZone: http://eureka-server:8761/eureka
