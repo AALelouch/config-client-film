@@ -12,7 +12,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: moviesrental.notificationhub@gmail.com
-    password: 1005717745
+    password: 1005717745cadc
     properties:
       mail:
         smtp:
