@@ -10,15 +10,24 @@ spring:
 
   mail:
     host: smtp.gmail.com
+
     port: 587
+
     username: moviesrental.notificationhub@gmail.com
+
     password: qbqyjzgpvnxqxhks
+
     properties:
       mail:
         smtp:
           auth: true
           starttls: 
             enable: true
+
+    servlet:
+      multipart:
+        max-file-size: 10MB
+        max-request.size: 10MB
 
 eureka:
   client:
