@@ -1,7 +1,7 @@
 server:
   port: 8084
   tomcat:
-    maxSwallowSize: 100MB
+    maxSwallowSize: -1
 
 debug:
   enable: true
